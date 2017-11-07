@@ -1,0 +1,4 @@
+services:
+#    nb_home.example:
+#        class: NB\HomeBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

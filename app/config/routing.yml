@@ -1,0 +1,3 @@
+nb_home:
+    resource: "@NBHomeBundle/Resources/config/routing.yml"
+    prefix:   /

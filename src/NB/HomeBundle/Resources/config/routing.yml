@@ -1,0 +1,5 @@
+# src/NB/HomeBundle/Resources/config/routing.yml
+
+home:
+    path:     /
+    defaults: { _controller: NBHomeBundle:Home:index }
