@@ -4,12 +4,13 @@
 
 namespace NB\HomeBundle\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
-class HomeController
+class HomeController extends Controller
 {
   public function indexAction()
   {
-    return new Response("Coucou ! ");
+    return $this->get('templating')->renderResponse('NBHomeBundle:Home:index.html.twig');
   }
 }

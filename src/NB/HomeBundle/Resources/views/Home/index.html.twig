@@ -1,0 +1,11 @@
+{# src/NB/HomeBundle/Resources/views/Home/index.html.twig #}
+
+{% extends "NBHomeBundle::layout.html.twig" %}
+
+{% block title %}{{ parent() }}{% endblock %}
+{% block body %}
+{{ parent() }}
+{% block nbhome_body %}
+  <h2>Re coucou</h2>
+{% endblock %}
+{% endblock %}
