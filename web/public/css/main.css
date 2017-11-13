@@ -1,14 +1,51 @@
-body{
+body {
   background: black;
   color: white;
 }
 
 div.center {
-    position:absolute;
-    left: 50%;
-    top: 50%;
-    width: 200px;
-    height: 200px;
-    margin-left: -100px; /* Cette valeur doit être la moitié négative de la valeur du width */
-    margin-top: -100px; /* Cette valeur doit être la moitié négative de la valeur du height */
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px; /* Cette valeur doit être la moitié négative de la valeur du width */
+  margin-top: -100px; /* Cette valeur doit être la moitié négative de la valeur du height */
+  text-align: center;
+}
+
+.contrast {
+  color:#20ff02;
+}
+
+header nav {
+  float: right;
+}
+
+ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  color: #20ff02;
+  margin-top: 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none;
+  color: white;
+  outline-style: none;
 }

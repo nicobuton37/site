@@ -13,12 +13,24 @@
   </head>
   <body>
   {% block body %}
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">A PROPOS</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">BLOG</a></li>
+        </ul>
+      </nav>
+    </header>
 
 
+{% block javascript %}
 
-  {% block javascript %}
-
-  {% endblock %}
-  {% endblock %} <!-- block body -->
-  </body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+{% endblock %}
+{% endblock %} <!-- block body -->
+</body>
 </html>
