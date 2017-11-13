@@ -1,6 +1,7 @@
 body {
   background: black;
   color: white;
+  font-family: Arial, Helvetica;
 }
 
 div.center {
@@ -20,16 +21,18 @@ div.center {
 
 header nav {
   float: right;
+  position: static;
 }
 
 ul {
   list-style: none;
+  border-bottom: solid 0.5px;
+  border-color: #20ff02;
 }
 
 header nav ul li {
   display: inline-block;
-  color: #20ff02;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 header nav ul li a {
@@ -44,8 +47,12 @@ a:hover {
   text-decoration: none;
 }
 
-a:visited{
+a:visited {
   text-decoration: none;
   color: white;
   outline-style: none;
+}
+
+.title_page {
+  padding-top: 40px;
 }

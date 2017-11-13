@@ -6,31 +6,43 @@
     <meta charset="utf-8">
     <title>{% block title %}Nicolas Buton{% endblock %}</title>
 
-    {% block stylesheets %}
+{% block stylesheets %}
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="../public/css/main.css">
-    {% endblock %}
+{% endblock %}
   </head>
-  <body>
-  {% block body %}
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PORTFOLIO</a></li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">BLOG</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+<div class="container">
 
+  <header>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Nicolas Buton</h2>
+        <p>Développeur logiciel <span class="contrast">/</span> web</p>
+      </div>
+      <div class="col-sm-6">
+        <nav>
+          <ul>
+            <li><a href="{{ path('home') }}">HOME</a></li>
+            <li><a href="{{ path('portfolio') }}">PORTFOLIO</a></li>
+            <li><a href="{{ path('about') }}">A PROPOS</a></li>
+            <li><a href="{{ path('contact') }}">CONTACT</a></li>
+            <li><a href="{{ path('blog') }}">BLOG</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>
+
+{% block nb_body %}
+
+{% endblock %}
 
 {% block javascript %}
-
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 {% endblock %}
-{% endblock %} <!-- block body -->
+
 </body>
 </html>

@@ -3,3 +3,19 @@
 home:
     path:     /
     defaults: { _controller: NBHomeBundle:Home:index }
+
+contact:
+    path:     /contact
+    defaults: { _controller: NBHomeBundle:Home:contact }
+
+portfolio:
+    path:     /portfolio
+    defaults: { _controller: NBHomeBundle:Home:portfolio }
+
+about:
+    path:     /about
+    defaults: { _controller: NBHomeBundle:Home:about }
+
+blog:
+    path:     /blog
+    defaults: { _controller: NBHomeBundle:Home:blog }
