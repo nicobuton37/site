@@ -1,34 +1,39 @@
+/* GENERAL */
 body {
   background: black;
   color: white;
   font-family: Arial, Helvetica;
 }
 
-div.center {
-  position:absolute;
-  left: 50%;
-  top: 50%;
-  width: 200px;
-  height: 200px;
-  margin-left: -100px; /* Cette valeur doit être la moitié négative de la valeur du width */
-  margin-top: -100px; /* Cette valeur doit être la moitié négative de la valeur du height */
-  text-align: center;
-}
-
 .contrast {
   color:#20ff02;
 }
 
-header nav {
-  float: right;
-  position: static;
-}
-
 ul {
   list-style: none;
-  border-bottom: solid 0.5px;
-  border-color: #20ff02;
 }
+
+p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+h1 {
+  color: #fffca5;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/* NAV */
+header nav {
+  float: right;
+}
+
+.subline {
+  border-bottom: solid 0.5px;
+}
+
 
 header nav ul li {
   display: inline-block;
@@ -42,17 +47,30 @@ header nav ul li a {
   padding-right: 15px;
 }
 
-a:hover {
+
+header nav ul li a:hover {
+  font-size: 20px;
   color: white;
   text-decoration: none;
+  transition: font-size 0.2s ease-in;
 }
 
-a:visited {
+header nav ul li a:visited {
   text-decoration: none;
   color: white;
   outline-style: none;
 }
 
-.title_page {
-  padding-top: 40px;
+/* COMPETENCES */
+
+.competences {
+  height: 200px;
+  background: white;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+
+.center {
+  padding-top: 70px;
 }

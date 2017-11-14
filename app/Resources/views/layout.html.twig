@@ -20,9 +20,9 @@
         <h2>Nicolas Buton</h2>
         <p>Développeur logiciel <span class="contrast">/</span> web</p>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 contrast">
         <nav>
-          <ul>
+          <ul class="subline">
             <li><a href="{{ path('home') }}">HOME</a></li>
             <li><a href="{{ path('portfolio') }}">PORTFOLIO</a></li>
             <li><a href="{{ path('about') }}">A PROPOS</a></li>
@@ -42,6 +42,9 @@
 {% block javascript %}
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="../public/js/script.js" charset="utf-8"></script>
+
+  </script>
 {% endblock %}
 
 </body>
