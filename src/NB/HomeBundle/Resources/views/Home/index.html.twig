@@ -6,20 +6,36 @@
 
 {% block nb_body %}
 <div class="container">
-  <section>
-    <div class="competences">
-      <div class="center">
-        Symfony
-      </div>
+  <section id="picture">
+    <div class="center">
+      <img src="../public/img/logo.png">
+    </div>
+    <div class="page-header">
+      <h1 class="title">Dével<span class="contrast">o</span>ppeur <span class="contrast">Web</span></h1>
     </div>
   </section>
-  <section id="welcome">
-    <div class="page-header">
-      <h1>Bienvenue</h1>
+  <section id="presentation">
+    <p>Bonjour, je m'appelle Nicolas Buton et suis <span>développeur</span> web et logiciel dans la région Centre Val de Loire. Je mets à votre disposition mes compétences en la matière pour développer un nouveau projet <span>numérique</span>
+      ou ajouter des fonctionnalités qui pourront vous rendre encore plus compétitif ! N'hésitez pas à me <a href="#" class="contrast">contacter</a> pour discuter de vos <span>besoins</span> et de vous partager mes <span>solutions</span> !</p>
+  </section>
+  <section id="competences">
+    <div class="center">
+      <img src="../public/img/competence.png">
     </div>
-    <p>Bonjour, je suis <span>développeur</span> web et logiciel dans la région Centre Val de Loire. Je mets à votre disposition mes compétences en la matière pour développer un nouveau projet <span>numérique</span>
-      ou ajouter des fonctionnalités qui pourront vous rendre encore plus compétitif ! N'hésitez pas à me <a href="{{ path('contact') }}" class="contrast">contacter</a> pour discuter de vos <span>besoins</span> et de vous partager mes <span>solutions</span> !</p>
-
+    <div class="page-header">
+      <h1 class="title">Mes compétences</h1>
+    </div>
+    <div id="slider">
+      <figure>
+        <img src="../public/img/symfony_black_01.png">
+        <img src="../public/img/htmlcss.png">
+        <img src="../public/img/PHP-logo.svg.png">
+        <img src="../public/img/javascript_logo.png">
+        <img src="../public/img/MySQL.svg_.png">
+        <img src="../public/img/Java006.png">
+        <img src="../public/img/android.png">
+      </figure>
+    </div>
   </section>
 </div>
 {% endblock %}

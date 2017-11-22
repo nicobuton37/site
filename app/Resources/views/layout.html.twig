@@ -15,30 +15,34 @@
 <div class="container">
 
   <header>
-    <div class="row">
-      <div class="col-sm-6">
-        <h2>Nicolas Buton</h2>
-        <p>Développeur logiciel <span class="contrast">/</span> web</p>
+    <section>
+      <ul id="navigation">
+        <li class="anchor"><a href="{{ path("home") }}" class="link">home</a></li>
+        <li class="anchor"><a href="{{ path("portfolio") }}" class="link">portfolio</a></li>
+        <li class="anchor"><a href="{{ path("contact") }}" class="link">contact</a></li>
+        <li class="anchor"><a href="{{ path("about") }}" class="link">a propos</a></li>
+        <li class="anchor"><a href="{{ path("blog") }}" class="link">blog</a></li>
+      </ul>
+      <div class="social">
+        <figure>
+          <a href="https://www.facebook.com/"><img src="../public/img/fb.png"></a>
+          <a href="#"><img src="../public/img/linkedin.png"></a>
+        </figure>
       </div>
-      <div class="col-sm-6 contrast">
-        <nav>
-          <ul class="subline">
-            <li><a href="{{ path('home') }}">HOME</a></li>
-            <li><a href="{{ path('portfolio') }}">PORTFOLIO</a></li>
-            <li><a href="{{ path('about') }}">A PROPOS</a></li>
-            <li><a href="{{ path('contact') }}">CONTACT</a></li>
-            <li><a href="{{ path('blog') }}">BLOG</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+    </section>
   </header>
 </div>
 
 {% block nb_body %}
 
 {% endblock %}
+{% block footer %}
+<footer>
+  <div class="container">
 
+  </div>
+</footer>
+{% endblock %}
 {% block javascript %}
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

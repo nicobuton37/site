@@ -1,76 +1,72 @@
-/* GENERAL */
+/* general */
+
 body {
-  background: black;
-  color: white;
   font-family: Arial, Helvetica;
-}
-
-.contrast {
-  color:#20ff02;
-}
-
-ul {
-  list-style: none;
-}
-
-p {
-  text-align: justify;
-  font-size: 20px;
-}
-
-h1 {
-  color: #fffca5;
 }
 
 a:hover {
   text-decoration: none;
-}
-/* NAV */
-header nav {
-  float: right;
-}
-
-.subline {
-  border-bottom: solid 0.5px;
-}
-
-
-header nav ul li {
-  display: inline-block;
-  margin-top: 30px;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding-right: 15px;
-}
-
-
-header nav ul li a:hover {
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  transition: font-size 0.2s ease-in;
-}
-
-header nav ul li a:visited {
-  text-decoration: none;
-  color: white;
-  outline-style: none;
-}
-
-/* COMPETENCES */
-
-.competences {
-  height: 200px;
-  background: white;
-  text-align: center;
   color: black;
-  font-size: 30px;
+}
+
+a:visited {
+  color: black;
+}
+
+p {
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+}
+
+/* image */
+
+.social {
+  position: absolute;
 }
 
 .center {
-  padding-top: 70px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+#slider {
+  text-align: center;
+}
+/* navigation */
+
+.anchor {
+  list-style: none;
+  color: black;
+  display: inline-block;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+#navigation {
+  display: block;
+  text-align: center;
+  border-bottom: 2px #5b5762 solid;
+}
+
+.contrast {
+  color: #5b5762;
+}
+
+/* footer */
+
+footer {
+  height: 200px;
+  background: #5b5762;
 }
